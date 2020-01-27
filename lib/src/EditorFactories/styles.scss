@@ -1,0 +1,154 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.component-ObjectEditor {
+	padding: 4px;
+	//padding-right: 10px;
+	padding-right: 0;
+
+	&.level-1 {
+		background: $light-gray4;
+	}
+
+	&.level-2 {
+		background: $light-gray2;
+	}
+
+	&.level-3 {
+		background: $gray5;
+	}
+
+	.component-ObjectPropertyEditor {
+		margin: 8px;
+		margin-right: 0;
+
+		display: flex;
+		flex-direction: column;
+
+		> .part-header {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			.bp3-control.bp3-checkbox {
+				margin: 5px 0;
+			}
+
+			.type-name {
+				margin: 0;
+				color: $blue1;
+			}
+
+			> .part-name {
+				width: 120px; // todo grid?
+				//font-weight: bold;
+				//font-size: 17px;
+
+				h5.bp3-heading {
+					margin: 0;
+				}
+			}
+
+			> .part-headerContent {
+				align-items: center;
+				flex: 1;
+
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		> .part-main {
+			padding-top: 4px;
+		}
+	}
+}
+
+.component-ArrayEditor {
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	> .part-header {
+		background: $cobalt5;
+		padding: 2px;
+	}
+
+	.component-ArrayEditorItem {
+		display: flex;
+		flex-direction: row;
+		padding: 8px 0 0px 0;
+
+		> .part-side {
+			background: $cobalt2;
+			padding: 2px;
+		}
+
+		> .part-main {
+			flex: 1;
+			background: $light-gray4;
+
+			> .part-type {
+				display: flex;
+				//margin-bottom: -8px;
+				//flex-direction: row-reverse;
+				.type-name {
+					margin: 0;
+					color: $blue1;
+				}
+			}
+		}
+	}
+}
+
+.component-MapEditor {
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	> .part-header {
+		background: $indigo5;
+		padding: 2px;
+	}
+
+	.component-MapEditorItem {
+		display: flex;
+		flex-direction: row;
+		padding: 8px 0 0px 0;
+
+		> .part-side {
+			background: $indigo2;
+			padding: 2px;
+		}
+
+		> .part-main {
+			flex: 1;
+			background: $light-gray4;
+
+			> .part-type {
+				display: flex;
+				//margin-bottom: -8px;
+				//flex-direction: row-reverse;
+				.type-name {
+					margin: 0;
+					color: $blue1;
+				}
+			}
+		}
+	}
+}
+
+.component-StringEditor {
+	padding-right: 16px;
+}
+
+.component-NumberEditor {
+	padding-right: 16px;
+}
+
+.component-BooleanEditor {
+	> .bp3-control.bp3-switch {
+		margin: 0;
+	}
+}

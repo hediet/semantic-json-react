@@ -1,0 +1,40 @@
+{
+	"name": "@hediet/semantic-json-react",
+	"description": "",
+	"version": "0.0.1",
+	"author": {
+		"name": "Henning Dieterichs",
+		"email": "henning.dieterichs@live.de"
+	},
+	"license": "MIT",
+	"main": "./dist/index",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"src"
+	],
+	"scripts": {
+		"dev": "tsc --watch",
+		"build": "tsc"
+	},
+	"peerDependencies": {
+		"mobx": "^5.10.1",
+		"mobx-react": "^6.1.1",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	},
+	"dependencies": {
+		"@hediet/std": "^0.6.0",
+		"@hediet/semantic-json": "0.0.2",
+		"@blueprintjs/core": "^3.17.1",
+		"@blueprintjs/select": "^3.11.2",
+		"@types/react-beautiful-dnd": "^11.0.4",
+		"blueprintjs": "^0.0.8",
+		"classnames": "^2.2.6",
+		"react-beautiful-dnd": "^12.2.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}
