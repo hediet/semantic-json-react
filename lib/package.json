@@ -1,6 +1,6 @@
 {
 	"name": "@hediet/semantic-json-react",
-	"description": "",
+	"description": "Highly experimental. Do not use yet.",
 	"version": "0.0.1",
 	"author": {
 		"name": "Henning Dieterichs",
